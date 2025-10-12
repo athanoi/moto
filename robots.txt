@@ -1,0 +1,80 @@
+# ===========================
+# Robots.txt for Nguyen Tu Motorbike Rental
+# Author: @NguyenTu
+# Site: https://athanoi.github.io/moto/
+# Date: 2025-10-12
+# ===========================
+
+# ---- General Access Rules ----
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /test/
+Disallow: /404.html
+
+# ---- Crawl Delay for Heavy Bots ----
+Crawl-delay: 10
+
+# ---- Block Known Crawlers That Waste Bandwidth ----
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: Yandex
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+# ---- Googlebot Specific Rules ----
+User-agent: Googlebot
+Allow: /
+Allow: /$
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /cgi-bin/
+Crawl-delay: 3
+
+# ---- Googlebot-Image: Allow Image Indexing ----
+User-agent: Googlebot-Image
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.webp$
+Disallow: /private/
+
+# ---- Mobile-first Indexing ----
+User-agent: Googlebot-Mobile
+Allow: /
+
+# ---- Bingbot Rules ----
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 5
+
+# ---- SEO Enhancements ----
+# Sitemap helps bots discover and index pages quickly.
+Sitemap: https://athanoi.github.io/moto/sitemap.xml
+
+# ---- Crawl Behavior Notes ----
+# * Landing page is bilingual (EN-VI)
+# * Prefer English content for indexing
+# * Page updates weekly with rental rates
+# * Location-based business (Hanoi, Vietnam)
+# * Schema: LocalBusiness with geo coordinates
+
+# ---- Host Directive (for some crawlers) ----
+Host: athanoi.github.io
+
+# ---- End of file ----
