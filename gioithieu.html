@@ -400,6 +400,26 @@ var swiper = new Swiper(".mySwiper", {
   breakpoints:{768:{slidesPerView:2}, 992:{slidesPerView:3}}
 });
 
+<script>
+// MULTI-LANGUAGE SWITCH
+function switchLang(lang){
+  const isExtraBtnsVisible = !document.getElementById("extraBtns").classList.contains("d-none");
+  document.querySelectorAll('.lang-vi, .lang-en').forEach(el=>el.classList.add('d-none'));
+  document.querySelectorAll('.lang-'+lang).forEach(el=>el.classList.remove('d-none'));
+  if(isExtraBtnsVisible) document.getElementById("extraBtns").classList.remove("d-none");
+}
+
+// SWIPER INITIALIZATION
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  autoplay: {delay:4000, disableOnInteraction:false},
+  pagination: {el:".swiper-pagination", clickable:true},
+  navigation:{nextEl:".swiper-button-next", prevEl:".swiper-button-prev"},
+  breakpoints:{768:{slidesPerView:2}, 992:{slidesPerView:3}}
+});
+
 // FADE-IN ANIMATION
 const faders = document.querySelectorAll(".fade-in");
 const appearOptions = {threshold:0.2, rootMargin:"0px 0px -50px 0px"};
@@ -413,7 +433,6 @@ const appearOnScroll = new IntersectionObserver((entries, observer)=>{
 }, appearOptions);
 faders.forEach(fader=>appearOnScroll.observe(fader));
 
-<script>
 // QUICK CALL TOGGLE
 const quickCallBtn = document.getElementById("quickCallBtn");
 const extraBtns = document.getElementById("extraBtns");
