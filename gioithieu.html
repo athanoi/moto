@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thuê xe máy Hà Nội dài ngày - Nguyễn Tú</title>
+<meta name="description" content="Cho thuê xe máy Hà Nội dài ngày/tháng. Xe mới, tiết kiệm xăng. Giá ưu đãi, cọc nhẹ. Giao tận nơi cho hợp đồng thuê dài ngày hoặc theo tháng.">
+<meta name="keywords" content="thuê xe máy Hà Nội, thuê xe máy dài ngày, thuê xe máy theo tháng, Nguyễn Tú">
+
+<!-- OpenGraph & Twitter Card -->
+<meta property="og:title" content="Thuê xe máy Hà Nội - Nguyễn Tú">
+<meta property="og:description" content="Cho thuê xe máy Hà Nội dài ngày/tháng. Xe mới, tiết kiệm xăng. Giá ưu đãi, cọc nhẹ. Giao tận nơi cho hợp đồng thuê dài ngày hoặc theo tháng.">
+<meta property="og:image" content="https://thuexemaynguyentu.com/wp-content/uploads/2025/10/Chi-phi-thue-xe-may-Ha-Noi.jpeg">
+<meta property="og:url" content="https://athanoi.github.io/moto/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="https://thuexemaynguyentu.com/wp-content/uploads/2025/09/cropped-Thue-xe-may-min-1-1.png" type="image/png">
+
+<!-- Bootstrap, Icons, Swiper -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+
+<style>
+:root {--primary:#FF9500;--secondary:#000;--bg:#fff;--accent:#FFCC00;}
+html, body {margin:0; padding:0; overflow-x:hidden; font-family: Arial, sans-serif; scroll-behavior: smooth; background: linear-gradient(135deg,#ff7f50,#1c1c1c,#ffffff,#00aaff); background-size: 400% 400%; animation: gradientBG 15s ease infinite; color: var(--secondary);}
+@keyframes gradientBG {0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}
+.top-bar {background: rgba(0,0,0,0.85); color: var(--accent); font-size:0.9rem; padding:.4rem 1rem; display:flex; justify-content:space-between; align-items:center;}
+.top-bar button {margin-left:5px; font-weight:bold; border-radius:20px; transition: all 0.3s;}
+.top-bar button:hover {transform:scale(1.1);}
+.navbar {background: var(--secondary);}
+.navbar .navbar-brand img{height:40px;}
+.navbar a{color: var(--primary);}
+.navbar a:hover{color: var(--accent);}
+#hero{text-align:center; padding:60px 20px; color: var(--bg);}
+#hero h1{font-size:2.5rem;font-weight:bold;margin-bottom:15px;text-shadow:1px 1px 8px rgba(0,0,0,0.3);}
+#hero p{font-size:1.2rem;margin-bottom:20px;text-shadow:0 1px 6px rgba(0,0,0,0.2);}
+#hero .btn{border-radius:50px;font-weight:bold;padding:0.7rem 1.5rem;transition:transform 0.2s;}
+#hero .btn:hover{transform:scale(1.05);}
+.fade-in{opacity:0; transform:translateY(20px); transition: all 0.8s ease;}
+.fade-in.appear{opacity:1; transform:translateY(0);}
+.accordion-button:focus {box-shadow:none;}
+.accordion-button:not(.collapsed) {background: rgba(255,149,0,0.1); color:#000;}
+#quickCallBtn {padding:0.7rem 1.5rem; font-size:1rem;}
+#extraBtns .btn {transition: all 0.3s;}
+#extraBtns .btn:hover {transform: scale(1.05);}
+</style>
+</head>
+<body>
+
+<!-- Topbar -->
+<div class="top-bar">
+  <div><i class="bi bi-clock"></i> 
+    <span class="lang-vi">Giờ làm việc: 9:00 – 21:00</span>
+    <span class="lang-en d-none">Open: 9:00 AM – 9:00 PM</span>
+  </div>
+  <div class="d-flex align-items-center">
+    <i class="bi bi-telephone me-1"></i>
+    <span class="lang-vi">0942467674 (Zalo / WhatsApp)</span>
+    <span class="lang-en d-none">0942467674 (Zalo / WhatsApp)</span>
+    <div class="ms-3">
+      <button class="btn btn-outline-light btn-sm" onclick="switchLang('vi')">🇻🇳 VI</button>
+      <button class="btn btn-outline-light btn-sm" onclick="switchLang('en')">🇺🇸 EN</button>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="https://thuexemaynguyentu.com/wp-content/uploads/2025/09/cropped-Thue-xe-may-min-1-1.png" alt="Nguyễn Tú"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#hero"><i class="bi bi-house"></i> <span class="lang-vi">Trang Chủ</span><span class="lang-en d-none">Home</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#about"><i class="bi bi-info-circle"></i> <span class="lang-vi">Giới Thiệu</span><span class="lang-en d-none">About</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#pricing"><i class="bi bi-cash"></i> <span class="lang-vi">Bảng Giá</span><span class="lang-en d-none">Pricing</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#faq"><i class="bi bi-question-circle"></i> <span class="lang-vi">FAQ</span><span class="lang-en d-none">FAQ</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#reviews"><i class="bi bi-star"></i> <span class="lang-vi">Đánh Giá</span><span class="lang-en d-none">Reviews</span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero">
+  <div class="container">
+    <h1 class="lang-vi">Thuê xe máy Hà Nội dài ngày - Nguyễn Tú</h1>
+    <h1 class="lang-en d-none">Hanoi Motorbike Rental - Nguyen Tu</h1>
+    <p class="lang-vi">Cho thuê xe máy Hà Nội dài ngày/tháng. Xe mới, tiết kiệm xăng. Giá ưu đãi, cọc nhẹ. Giao tận nơi khi thuê nhiều ngày hoặc theo tháng.</p>
+    <p class="lang-en d-none">Long-term/monthly motorbike rental in Hanoi. New, fuel-efficient bikes. Preferential price, small deposit. Home delivery for multi-day or monthly rentals.</p>
+    <a href="#pricing" class="btn btn-warning btn-lg lang-vi">Thuê Ngay</a>
+    <a href="#pricing" class="btn btn-warning btn-lg lang-en d-none">Rent Now</a>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="container py-5 fade-in">
+  <h2 class="text-center mb-5"><span class="lang-vi">Giới Thiệu Dịch Vụ</span><span class="lang-en d-none">About Our Service</span></h2>
+  <div class="row text-center">
+    <div class="col-md-4 mb-4">
+      <i class="bi bi-speedometer2 fs-2 text-warning"></i>
+      <h3 class="h5 mt-2"><span class="lang-vi">Xe số & xe ga đa dạng, chất lượng</span><span class="lang-en d-none">Manual & automatic bikes, high quality</span></h3>
+    </div>
+    <div class="col-md-4 mb-4">
+      <i class="bi bi-clock-history fs-2 text-warning"></i>
+      <h3 class="h5 mt-2"><span class="lang-vi">Thủ tục thuê xe nhanh chóng</span><span class="lang-en d-none">Fast rental procedure</span></h3>
+    </div>
+    <div class="col-md-4 mb-4">
+      <i class="bi bi-cash-stack fs-2 text-warning"></i>
+      <h3 class="h5 mt-2"><span class="lang-vi">Giá thuê hợp lý, ưu đãi dài ngày</span><span class="lang-en d-none">Affordable price, long-term discounts</span></h3>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing Section -->
+<section id="pricing" class="container my-5 fade-in">
+  <h2 class="text-center mb-5 lang-vi">Bảng Giá Thuê Xe Máy Hà Nội</h2>
+  <h2 class="text-center mb-5 lang-en d-none">Motorbike Rental Prices in Hanoi</h2>
+  <div class="accordion" id="pricingAccordion">
+
+    <div class="accordion-item">
+      <h3 class="accordion-header" id="price1">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+          <i class="bi bi-bicycle me-2 text-warning"></i>
+          <span class="lang-vi">Giá thuê 1 ngày</span>
+          <span class="lang-en d-none">1-Day Rental Price</span>
+        </button>
+      </h3>
+      <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#pricingAccordion">
+        <div class="accordion-body">
+          <span class="lang-vi"><strong>Xe số:</strong> 150.000đ/ngày <br><strong>Xe ga:</strong> 200.000đ/ngày</span>
+          <span class="lang-en d-none"><strong>Manual bike:</strong> 150,000 VND/day <br><strong>Automatic bike:</strong> 200,000 VND/day</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h3 class="accordion-header" id="price2">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+          <i class="bi bi-bicycle me-2 text-warning"></i>
+          <span class="lang-vi">Giá thuê 2 ngày</span>
+          <span class="lang-en d-none">2-Day Rental Price</span>
+        </button>
+      </h3>
+      <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#pricingAccordion">
+        <div class="accordion-body">
+          <span class="lang-vi"><strong>Xe số:</strong> 300.000đ <br><strong>Xe ga:</strong> 350.000đ</span>
+          <span class="lang-en d-none"><strong>Manual bike:</strong> 300,000 VND <br><strong>Automatic bike:</strong> 350,000 VND</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h3 class="accordion-header" id="price3">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+          <i class="bi bi-bicycle me-2 text-warning"></i>
+          <span class="lang-vi">Giá thuê 3 ngày</span>
+          <span class="lang-en d-none">3-Day Rental Price</span>
+        </button>
+      </h3>
+      <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#pricingAccordion">
+        <div class="accordion-body">
+          <span class="lang-vi"><strong>Xe số:</strong> 400.000đ <br><strong>Xe ga:</strong> 500.000đ</span>
+          <span class="lang-en d-none"><strong>Manual bike:</strong> 400,000 VND <br><strong>Automatic bike:</strong> 500,000 VND</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h3 class="accordion-header" id="price4">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+          <i class="bi bi-bicycle me-2 text-warning"></i>
+          <span class="lang-vi">Giá thuê 1 tuần</span>
+          <span class="lang-en d-none">1-Week Rental Price</span>
+        </button>
+      </h3>
+      <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#pricingAccordion">
+        <div class="accordion-body">
+          <span class="lang-vi"><strong>Xe số:</strong> 600.000đ <br><strong>Xe ga:</strong> 900.000đ</span>
+          <span class="lang-en d-none"><strong>Manual bike:</strong> 600,000 VND <br><strong>Automatic bike:</strong> 900,000 VND</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h3 class="accordion-header" id="price5">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+          <i class="bi bi-bicycle me-2 text-warning"></i>
+          <span class="lang-vi">Giá thuê 1 tháng</span>
+          <span class="lang-en d-none">1-Month Rental Price</span>
+        </button>
+      </h3>
+      <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#pricingAccordion">
+        <div class="accordion-body">
+          <span class="lang-vi"><strong>Xe số:</strong> 1.000.000đ – 1.500.000đ <br><strong>Xe ga:</strong> 1.200.000đ – 2.000.000đ</span>
+          <span class="lang-en d-none"><strong>Manual bike:</strong> 1,000,000 – 1,500,000 VND <br><strong>Automatic bike:</strong> 1,200,000 – 2,000,000 VND</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section id="faq" class="container py-5 fade-in">
+  <h2 class="text-center mb-5"><span class="lang-vi">Câu Hỏi Thường Gặp</span><span class="lang-en d-none">Frequently Asked Questions</span></h2>
+  <div class="accordion" id="faqAccordion">
+
+    <div class="accordion-item">
+      <h3 class="accordion-header" id="faq1">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq1">
+          <span class="lang-vi">Tôi cần gì để thuê xe?</span>
+          <span class="lang-en d-none">What do I need to rent a bike?</span>
+        </button>
+      </h3>
+      <div id="collapseFaq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          <span class="lang-vi"><strong>Căn cước công dân (CCCD)</strong> và <strong>đặt cọc</strong> từ 2 – 5 triệu đồng.</span>
+          <span class="lang-en d-none">Your <strong>ID card</strong> and a <strong>deposit</strong> of 2 – 5 million VND.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h3 class="accordion-header" id="faq2">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq2">
+          <span class="lang-vi">Thuê nhiều ngày có được giảm giá không?</span>
+                    <span class="lang-en d-none">Is there a discount for multiple days?</span>
+        </button>
+      </h3>
+      <div id="collapseFaq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          <span class="lang-vi">Có, áp dụng <strong>giá ưu đãi</strong> cho hợp đồng thuê dài ngày hoặc theo tháng.</span>
+          <span class="lang-en d-none">Yes, we offer <strong>preferential rates</strong> for long-term or monthly rentals.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h3 class="accordion-header" id="faq3">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq3">
+          <span class="lang-vi">Có giao xe tận nơi không?</span>
+          <span class="lang-en d-none">Do you deliver the bike?</span>
+        </button>
+      </h3>
+      <div id="collapseFaq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          <span class="lang-vi">Có, hỗ trợ <strong>giao/nhận xe tận nơi</strong> trong nội thành Hà Nội cho hợp đồng thuê dài ngày hoặc theo tháng.</span>
+          <span class="lang-en d-none">Yes, we support <strong>delivery and pick-up</strong> within central Hanoi for long-term or monthly rentals.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h3 class="accordion-header" id="faq4">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq4">
+          <span class="lang-vi">Tôi có cần bằng lái xe máy không?</span>
+          <span class="lang-en d-none">Do I need a motorbike license?</span>
+        </button>
+      </h3>
+      <div id="collapseFaq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          <span class="lang-vi">Bạn cần bằng A1 (hoặc bằng lái quốc tế) cho xe trên 50cc.</span>
+          <span class="lang-en d-none">You need an A1 license (or international permit) for bikes over 50cc.</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Reviews Section -->
+<section id="reviews" class="container py-5 fade-in">
+  <h2 class="text-center mb-5"><span class="lang-vi">Đánh Giá Khách Hàng</span><span class="lang-en d-none">Customer Reviews</span></h2>
+  <div class="swiper mySwiper p-3 rounded shadow-lg" style="background: rgba(255,255,255,0.9);">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide p-4 shadow rounded bg-white border border-warning">
+        <div class="text-warning mb-2">
+          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </div>
+        <p class="mb-3">"Xe mới, thủ tục nhanh, rất tiện cho chuyến đi!"</p>
+        <h5 class="fw-bold mb-0">Nguyễn A</h5>
+      </div>
+      <div class="swiper-slide p-4 shadow rounded bg-white border border-warning">
+        <div class="text-warning mb-2">
+          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+        </div>
+        <p class="mb-3">"Dịch vụ tốt, giá hợp lý, có hỗ trợ giao xe."</p>
+        <h5 class="fw-bold mb-0">Trần B</h5>
+      </div>
+      <div class="swiper-slide p-4 shadow rounded bg-white border border-warning">
+        <div class="text-warning mb-2">
+          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        </div>
+        <p class="mb-3">"Rất hài lòng với cách phục vụ. Xe chạy êm."</p>
+        <h5 class="fw-bold mb-0">Phạm C</h5>
+      </div>
+    </div>
+    <div class="swiper-button-next text-dark"></div>
+    <div class="swiper-button-prev text-dark"></div>
+    <div class="swiper-pagination mt-3"></div>
+  </div>
+</section>
+
+<!-- Floating Quick Call + Local Map Buttons -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index:9999;">
+  <div class="d-flex flex-column align-items-end">
+    <button class="btn btn-warning rounded-pill fw-bold mb-2 shadow-lg" id="quickCallBtn" aria-expanded="false" aria-controls="extraBtns">
+      <i class="bi bi-telephone-fill me-1"></i>
+      <span class="lang-vi">Liên hệ</span>
+      <span class="lang-en d-none">Contact</span>
+    </button>
+    <div class="d-none flex-column w-100" id="extraBtns">
+      <a href="https://wa.me/84942467674" target="_blank" class="btn btn-success rounded-pill mb-2 w-100 shadow">
+        <i class="bi bi-whatsapp me-1"></i>
+        <span class="lang-vi">Chat WhatsApp</span>
+        <span class="lang-en d-none">Chat WhatsApp</span>
+      </a>
+      <a href="https://zalo.me/0942467674" target="_blank" class="btn btn-primary rounded-pill mb-2 w-100 shadow">
+        <i class="bi bi-chat-dots me-1"></i>
+        <span class="lang-vi">Chat Zalo</span>
+        <span class="lang-en d-none">Chat Zalo</span>
+      </a>
+      <a href="https://maps.app.goo.gl/y8KALb2CWUfLYqxS6?g_st=ipc" target="_blank" class="btn btn-info rounded-pill w-100 shadow">
+        <i class="bi bi-geo-alt me-1"></i>
+        <span class="lang-vi">Xem bản đồ</span>
+        <span class="lang-en d-none">View Map</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer py-5 text-light" style="background:#111;">
+  <div class="container text-center text-md-start">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning mb-3">Nguyễn Tú</h5>
+        <address>
+          <p class="mb-1"><i class="bi bi-envelope-fill me-2"></i><a href="mailto:nguyentuantu8x@gmail.com" class="text-warning">nguyentuantu8x@gmail.com</a></p>
+          <p class="mb-1"><i class="bi bi-telephone-fill me-2"></i><a href="tel:+84942467674" class="text-warning">0942467674</a></p>
+          <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>112 Nguyễn Văn Cừ, Bồ Đề, Long Biên, Hà Nội</p>
+          <p class="mb-0"><i class="bi bi-clock-fill me-2"></i><span class="lang-vi">9:00 – 21:00</span><span class="lang-en d-none">9:00 AM – 9:00 PM</span></p>
+        </address>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h5 class="lang-vi text-warning mb-3">Menu Nhanh</h5>
+        <h5 class="lang-en d-none text-warning mb-3">Quick Menu</h5>
+        <ul class="list-unstyled">
+          <li><a href="#hero" class="text-secondary text-opacity-75 text-decoration-none"><span class="lang-vi">Trang Chủ</span><span class="lang-en d-none">Home</span></a></li>
+          <li><a href="#about" class="text-secondary text-opacity-75 text-decoration-none"><span class="lang-vi">Giới Thiệu</span><span class="lang-en d-none">About</span></a></li>
+          <li><a href="#pricing" class="text-secondary text-opacity-75 text-decoration-none"><span class="lang-vi">Bảng Giá</span><span class="lang-en d-none">Pricing</span></a></li>
+          <li><a href="#faq" class="text-secondary text-opacity-75 text-decoration-none"><span class="lang-vi">FAQ</span><span class="lang-en d-none">FAQ</span></a></li>
+          <li><a href="#reviews" class="text-secondary text-opacity-75 text-decoration-none"><span class="lang-vi">Đánh Giá</span><span class="lang-en d-none">Reviews</span></a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h5 class="lang-vi text-warning mb-3">Theo Dõi</h5>
+        <h5 class="lang-en d-none text-warning mb-3">Follow Us</h5>
+        <div class="d-flex justify-content-center justify-content-md-start">
+          <a href="https://www.facebook.com/chothuexemaynguyentu/" target="_blank" class="me-4 text-warning" aria-label="Facebook"><i class="bi bi-facebook fs-4"></i></a>
+          <a href="https://maps.app.goo.gl/y8KALb2CWUfLYqxS6?g_st=ipc" target="_blank" class="me-4 text-warning" aria-label="Google Maps"><i class="bi bi-geo-alt fs-4"></i></a>
+          <a href="https://www.tripadvisor.com/Attraction_Review-g21333608-d9826317-Reviews-Nguyen_Tu_Motorbike_Rental-Long_Bien_Hanoi.html" target="_blank" class="text-warning" aria-label="TripAdvisor"><i class="bi bi-star fs-4"></i></a>
+        </div>
+      </div>
+    </div>
+    <hr style="border-color:#555;">
+    <div class="text-center pt-3">
+      <p class="mb-0">© 2025 Nguyễn Tú | Designed by <a href="https://thuexemaynguyentu.com" class="text-warning text-decoration-none" target="_blank">thuexemaynguyentu.com</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap & Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+// MULTI-LANGUAGE SWITCH
+function switchLang(lang){
+  const isExtraBtnsVisible = !document.getElementById("extraBtns").classList.contains("d-none");
+  document.querySelectorAll('.lang-vi, .lang-en').forEach(el=>el.classList.add('d-none'));
+  document.querySelectorAll('.lang-'+lang).forEach(el=>el.classList.remove('d-none'));
+  if(isExtraBtnsVisible) document.getElementById("extraBtns").classList.remove("d-none");
+}
+
+// SWIPER INITIALIZATION
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  autoplay: {delay:4000, disableOnInteraction:false},
+  pagination: {el:".swiper-pagination", clickable:true},
+  navigation:{nextEl:".swiper-button-next", prevEl:".swiper-button-prev"},
+  breakpoints:{768:{slidesPerView:2}, 992:{slidesPerView:3}}
+});
+
+// FADE-IN ANIMATION
+const faders = document.querySelectorAll(".fade-in");
+const appearOptions = {threshold:0.2, rootMargin:"0px 0px -50px 0px"};
+const appearOnScroll = new IntersectionObserver((entries, observer)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add("appear");
+      observer.unobserve(entry.target);
+    }
+  });
+}, appearOptions);
+faders.forEach(fader=>appearOnScroll.observe(fader));
+
+// QUICK CALL TOGGLE
+const quickCallBtn = document.getElementById("quickCallBtn");
+const extraBtns = document.getElementById("extraBtns");
+quickCallBtn.addEventListener("click", () => {
+  const isExpanded = extraBtns.classList.toggle("d-none");
+  quickCallBtn.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
+});
+</script>
+
+</body>
+</html>
