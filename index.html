@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nguyễn Tú – Thuê Xe Máy Hà Nội</title>
+<meta name="description" content="Thuê xe máy Hà Nội uy tín, thủ tục nhanh, giao tận nơi. Xe số & xe ga chất lượng. Liên hệ Zalo/WhatsApp 0942467674.">
+<meta name="keywords" content="Thuê xe máy Hà Nội, Motorbike Rental Hanoi">
+
+<!-- Favicon & Logo -->
+<link rel="icon" href="https://thuexemaynguyentu.com/wp-content/uploads/2025/09/cropped-Thue-xe-may-min-1-1.png">
+
+<!-- Bootstrap & Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+
+<style>
+:root{
+  --orange:#FF6B3F;
+  --black:#111;
+  --white:#fff;
+  --gray:#f2f2f2;
+}
+body{
+  font-family: 'Arial', sans-serif;
+  scroll-behavior: smooth;
+  background: linear-gradient(135deg,var(--orange),var(--black),var(--white));
+  color: var(--black);
+}
+a{text-decoration:none;color:var(--orange);}
+a:hover{color:#fff;}
+
+/* Navbar */
+.navbar{background:rgba(17,17,17,0.85);}
+.navbar a{color:var(--orange);}
+.navbar a:hover{color:#fff;}
+.navbar .btn-lang{margin-left:10px;}
+
+/* Hero */
+#hero{
+  text-align:center;
+  padding:80px 20px;
+  background:rgba(255,107,63,0.2);
+}
+#hero h1{font-size:3rem;font-weight:bold;}
+#hero p{font-size:1.2rem;margin-bottom:20px;}
+#hero .btn{border-radius:50px;}
+
+/* Section */
+section{padding:60px 0;}
+h2{text-align:center;margin-bottom:40px;}
+
+/* Accordion */
+.accordion-button{transition:all 0.3s ease;}
+.accordion-button:not(.collapsed){background-color:rgba(255,107,63,0.15);color:var(--orange);}
+.accordion-body{background-color:rgba(255,107,63,0.05);}
+
+/* Table */
+.table-highlight tbody tr:hover{background-color:rgba(255,107,63,0.2);}
+
+/* Swiper */
+.swiper-slide{background:#fff;border-radius:10px;padding:20px;box-shadow:0 2px 15px rgba(0,0,0,0.1);}
+.swiper-button-next, .swiper-button-prev{color:var(--orange);}
+
+/* Footer */
+#footer{background:var(--black);color:var(--white);padding:40px 0;}
+#footer a{color:var(--orange);}
+#footer a:hover{color:#fff;}
+
+/* Floating Contact */
+.quick-call-wrapper{position:fixed;bottom:20px;right:20px;z-index:999;}
+.quick-call-btn{background:#00CC00;color:#fff;padding:12px 20px;border-radius:50px;border:none;cursor:pointer;}
+.extra-btns{display:none;flex-direction:column;margin-top:10px;}
+.extra-btn{background:var(--orange);color:#000;padding:10px 15px;margin-bottom:5px;border-radius:30px;text-align:center;text-decoration:none;}
+.extra-btn:hover{transform:scale(1.05);transition:0.3s;}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="https://thuexemaynguyentu.com/wp-content/uploads/2025/09/cropped-Thue-xe-may-min-1-1.png" alt="Logo" width="50"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faq-general">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+      </ul>
+      <button class="btn btn-outline-light btn-lang" id="langToggle">EN</button>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section id="hero">
+  <h1>Nguyễn Tú Motorbike Rental</h1>
+  <p>Thuê xe máy Hà Nội nhanh chóng, uy tín, giá tốt. Xe số & xe ga chất lượng.</p>
+  <a href="#pricing" class="btn btn-dark">Thuê Ngay / Rent Now</a>
+</section>
+
+<!-- About -->
+<section id="about" class="container">
+  <h2>Giới Thiệu / About Us</h2>
+  <ul class="list-unstyled">
+    <li><i class="bi bi-speedometer2"></i> Xe số & xe ga đa dạng / Variety of motorbikes</li>
+    <li><i class="bi bi-clock-history"></i> Thủ tục nhanh chóng / Fast procedure</li>
+    <li><i class="bi bi-cash-stack"></i> Giá hợp lý: 150k – 200k/ngày / Affordable price: 150k – 200k/day</li>
+    <li><i class="bi bi-house-door"></i> Hỗ trợ giao tận nơi / Delivery available</li>
+    <li><i class="bi bi-credit-card"></i> Đặt cọc 1 – 5 triệu + CCCD / Deposit 1–5M VND + ID</li>
+  </ul>
+</section>
+
+<!-- Pricing -->
+<section id="pricing" class="container text-center">
+  <h2>Bảng Giá / Pricing</h2>
+  <img src="https://thuexemaynguyentu.com/wp-content/uploads/2025/10/Chi-phi-thue-xe-may-Ha-Noi.jpeg" alt="Pricing Banner" class="img-fluid mb-4">
+  <div class="table-responsive">
+    <table class="table table-bordered table-hover table-highlight">
+      <thead class="table-dark">
+        <tr>
+          <th>Loại Xe / Type</th>
+          <th>Giá/Ngày / Price/Day</th>
+          <th>Giảm Giá / Discount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Xe số / Manual</td><td>150.000đ</td><td>Giảm 10% nếu >3 ngày / 10% off if >3 days</td></tr>
+        <tr><td>Xe ga / Automatic</td><td>200.000đ</td><td>Giảm 10% nếu >3 ngày / 10% off if >3 days</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq-general" class="container">
+  <h2>FAQ</h2>
+  <div class="accordion" id="generalFaqAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq1">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq1">Tôi cần gì để thuê xe? / What do I need to rent?</button>
+      </h2>
+      <div id="collapseFaq1" class="accordion-collapse collapse" data-bs-parent="#generalFaqAccordion">
+        <div class="accordion-body">CCCD + đặt cọc 1 – 5 triệu / ID + deposit 1–5M VND</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq2">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq2">Có giảm giá nếu thuê nhiều ngày? / Discount for multiple days?</button>
+      </h2>
+      <div id="collapseFaq2" class="accordion-collapse collapse" data-bs-parent="#generalFaqAccordion">
+        <div class="accordion-body">Có, giá sẽ rẻ hơn / Yes, cheaper if renting more days</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq3">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq3">Có giao xe tận nơi không? / Delivery available?</button>
+      </h2>
+      <div id="collapseFaq3" class="accordion-collapse collapse" data-bs-parent="#generalFaqAccordion">
+        <div class="accordion-body">Có thể thỏa thuận / Can be arranged</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section id="reviews" class="container">
+  <h2>Đánh Giá / Reviews</h2>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><p>"Xe mới, thủ tục nhanh!"</p><h5>Nguyễn A</h5></div>
+      <div class="swiper-slide"><p>"Dịch vụ tốt, giá hợp lý."</p><h5>Trần B</h5></div>
+      <div class="swiper-slide"><p>"Rất hài lòng với cách phục vụ."</p><h5>Phạm C</h5></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+  <div class="container text-center">
+    <p><i class="bi bi-telephone-fill"></i> <a href="tel:0942467674">0942467674</a> | Zalo/WhatsApp</p>
+    <p><i class="bi bi-envelope-fill"></i> <a href="mailto:nguyentuantu8x@gmail.com">nguyentuantu8x@gmail.com</a></p>
+    <p><i class="bi bi-geo-alt-fill"></i> 112 Nguyễn Văn Cừ, Bồ Đề, Long Biên, Hà Nội, Việt Nam</p>
+    <p><i class="bi bi-clock-fill"></i> 9:00 – 21:00</p>
+    <p><a href="https://www.facebook.com/chothuexemaynguyentu" target="_blank">Fanpage</a> | <a href="https://maps.app.goo.gl/h8v8NYTmxA88CDMM7?g_st=ipc" target="_blank">Bản đồ</a> | <a href="https://www.tripadvisor.com/Attraction_Review-g21333608-d9826317-Reviews-Nguyen_Tu_Motorbike_Rental-Long_Bien_Hanoi.html" target="_blank">Đánh giá</a></p>
+    <p>© 2025 Nguyễn Tú Motorbike Rental</p>
+  </div>
+</footer>
+
+<!-- Floating Quick Contact -->
+<div class="quick-call-wrapper">
+  <button class="quick-call-btn" id="quickCallBtn">Zalo / WhatsApp</button>
+  <div class="extra-btns" id="extraBtns">
+    <a href="https://maps.app.goo.gl/h8v8NYTmxA88CDMM7?g_st=ipc" target="_blank" class="extra-btn">Bản đồ / Map</a>
+    <a href="https://www.facebook.com/chothuexemaynguyentu" target="_blank" class="extra-btn">Fanpage</a>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+const quickCallBtn=document.getElementById("quickCallBtn");
+const extraBtns=document.getElementById("extraBtns");
+quickCallBtn.addEventListener("click",()=>{extraBtns.style.display=(extraBtns.style.display==="flex"?"none":"flex");});
+
+// Swiper
+new Swiper(".mySwiper",{slidesPerView:1,spaceBetween:20,loop:true,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},autoplay:{delay:5000},breakpoints:{768:{slidesPerView:2,spaceBetween:30},1024:{slidesPerView:3,spaceBetween:40}}});
+
+// Language toggle
+const langToggle=document.getElementById("langToggle");
+let isEN=false;
+langToggle.addEventListener("click",()=>{
+  document.body.querySelectorAll('[lang]').forEach(el=>el.style.display='');
+  isEN=!isEN;
+  if(isEN){
+    document.body.querySelectorAll('body *').forEach(el=>{
+      if(el.innerHTML.includes('/') && el.innerHTML.includes(' ')) el.style.display='block';
+    });
+    langToggle.innerText='VI';
+  }else{
+    langToggle.innerText='EN';
+  }
+});
+</script>
+
+</body>
+</html>
