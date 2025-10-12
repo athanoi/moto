@@ -37,8 +37,7 @@
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://athanoi.github.io/moto/#business",
-  "additionalType": "https://schema.org/MotorcycleRental",
+  "@id": "https://athanoi.github.io/moto/#localbusiness",
   "name": "Nguyen Tu Motorbike Rental",
   "image": "https://thuexemaynguyentu.com/wp-content/uploads/2025/10/Chi-phi-thue-xe-may-Ha-Noi.jpeg",
   "url": "https://athanoi.github.io/moto/",
@@ -47,69 +46,50 @@
   "description": "Long-term and monthly motorbike rental in Hanoi | Cho thuê xe máy dài ngày, theo tháng tại Hà Nội. New bikes, low deposit, free delivery.",
   "address": {
     "@type": "PostalAddress",
-    "@id": "https://athanoi.github.io/moto/#address",
     "streetAddress": "112 Nguyễn Văn Cừ, Bồ Đề, Long Biên",
-    "addressLocality": "Hanoi",
-    "addressRegion": "Hà Nội",
+    "addressLocality": "Hà Nội",
     "postalCode": "100000",
     "addressCountry": "VN"
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "@id": "https://athanoi.github.io/moto/#geo",
     "latitude": 21.0409907,
     "longitude": 105.8691834
   },
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "@id": "https://athanoi.github.io/moto/#hours",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "opens": "09:00",
-      "closes": "21:00"
-    }
-  ],
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"
+    ],
+    "opens": "09:00",
+    "closes": "21:00"
+  }],
   "aggregateRating": {
     "@type": "AggregateRating",
-    "@id": "https://athanoi.github.io/moto/#rating",
     "ratingValue": "4.9",
     "reviewCount": "128"
   },
   "review": [
     {
       "@type": "Review",
-      "@id": "https://athanoi.github.io/moto/#review1",
       "author": {
         "@type": "Person",
-        "@id": "https://athanoi.github.io/moto/#author1",
         "name": "Nguyen A"
       },
       "reviewRating": {
         "@type": "Rating",
-        "@id": "https://athanoi.github.io/moto/#rating1",
         "ratingValue": "5"
       },
       "reviewBody": "Xe mới, thủ tục nhanh, rất tiện cho chuyến đi!"
     },
     {
       "@type": "Review",
-      "@id": "https://athanoi.github.io/moto/#review2",
       "author": {
         "@type": "Person",
-        "@id": "https://athanoi.github.io/moto/#author2",
         "name": "Tran B"
       },
       "reviewRating": {
         "@type": "Rating",
-        "@id": "https://athanoi.github.io/moto/#rating2",
         "ratingValue": "4.5"
       },
       "reviewBody": "Dịch vụ tốt, giá hợp lý, có hỗ trợ giao xe."
