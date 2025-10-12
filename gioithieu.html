@@ -413,12 +413,15 @@ const appearOnScroll = new IntersectionObserver((entries, observer)=>{
 }, appearOptions);
 faders.forEach(fader=>appearOnScroll.observe(fader));
 
-// QUICK CALL TOGGLE
+<!-- QUICK CALL TOGGLE -->
+<script>
 const quickCallBtn = document.getElementById("quickCallBtn");
 const extraBtns = document.getElementById("extraBtns");
+
 quickCallBtn.addEventListener("click", () => {
-  const isExpanded = extraBtns.classList.toggle("d-none");
-  quickCallBtn.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
+  const isVisible = extraBtns.classList.contains("d-none");
+  extraBtns.classList.toggle("d-none");
+  quickCallBtn.setAttribute('aria-expanded', isVisible ? 'true' : 'false');
 });
 </script>
 
