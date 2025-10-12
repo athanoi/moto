@@ -420,6 +420,7 @@ var swiper = new Swiper(".mySwiper", {
   breakpoints:{768:{slidesPerView:2}, 992:{slidesPerView:3}}
 });
 
+<script>
 // FADE-IN ANIMATION
 const faders = document.querySelectorAll(".fade-in");
 const appearOptions = {threshold:0.2, rootMargin:"0px 0px -50px 0px"};
@@ -438,11 +439,10 @@ const quickCallBtn = document.getElementById("quickCallBtn");
 const extraBtns = document.getElementById("extraBtns");
 
 quickCallBtn.addEventListener("click", () => {
-  const isHidden = extraBtns.classList.contains("d-none"); // true nếu đang ẩn
-  extraBtns.classList.toggle("d-none"); // đổi trạng thái hiển thị
-  quickCallBtn.setAttribute('aria-expanded', isHidden ? 'true' : 'false'); // đúng với trạng thái sau toggle
+  const isHidden = extraBtns.classList.contains("d-none"); 
+  extraBtns.classList.toggle("d-none"); 
+  quickCallBtn.setAttribute('aria-expanded', isHidden ? 'true' : 'false'); 
 });
 </script>
-
 </body>
 </html>
