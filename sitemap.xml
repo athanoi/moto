@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="https://www.w3.org/1999/xhtml"
+  xmlns:image="https://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:geo="https://www.google.com/geo/schemas/sitemap/1.0"
+>
+  <!-- Main English version -->
+  <url>
+    <loc>https://athanoi.github.io/moto/</loc>
+    <lastmod>2025-10-12T12:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link 
+        rel="alternate" 
+        hreflang="en" 
+        href="https://athanoi.github.io/moto/" />
+    <xhtml:link 
+        rel="alternate" 
+        hreflang="vi" 
+        href="https://athanoi.github.io/moto/?lang=vi" />
+    <image:image>
+      <image:loc>https://thuexemaynguyentu.com/wp-content/uploads/2025/10/Chi-phi-thue-xe-may-Ha-Noi.jpeg</image:loc>
+      <image:caption>Nguyen Tu Motorbike Rental in Hanoi - Cho thuê xe máy Nguyễn Tú</image:caption>
+      <image:title>Motorbike Rental in Hanoi</image:title>
+    </image:image>
+    <geo:geo>
+      <geo:format>latitude,longitude</geo:format>
+      <geo:point>21.0409907,105.8691834</geo:point>
+      <geo:placename>Nguyen Tu Motorbike Rental, Hanoi</geo:placename>
+      <geo:region>VN-HN</geo:region>
+    </geo:geo>
+  </url>
+
+  <!-- Vietnamese version (optional for multi-lang SEO) -->
+  <url>
+    <loc>https://athanoi.github.io/moto/?lang=vi</loc>
+    <lastmod>2025-10-12T12:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link 
+        rel="alternate" 
+        hreflang="vi" 
+        href="https://athanoi.github.io/moto/?lang=vi" />
+    <xhtml:link 
+        rel="alternate" 
+        hreflang="en" 
+        href="https://athanoi.github.io/moto/" />
+    <image:image>
+      <image:loc>https://thuexemaynguyentu.com/wp-content/uploads/2025/10/Chi-phi-thue-xe-may-Ha-Noi.jpeg</image:loc>
+      <image:caption>Cho thuê xe máy Hà Nội - Nguyễn Tú</image:caption>
+      <image:title>Thuê xe máy Hà Nội giá rẻ</image:title>
+    </image:image>
+    <geo:geo>
+      <geo:format>latitude,longitude</geo:format>
+      <geo:point>21.0409907,105.8691834</geo:point>
+      <geo:placename>Nguyen Tu Motorbike Rental, Hà Nội</geo:placename>
+      <geo:region>VN-HN</geo:region>
+    </geo:geo>
+  </url>
+
+</urlset>
