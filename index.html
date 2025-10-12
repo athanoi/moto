@@ -8,53 +8,55 @@
 <meta name="keywords" content="thuê xe máy Hà Nội, thuê xe máy gần đây, thuê xe máy Nguyễn Tú">
 <link rel="icon" href="https://thuexemaynguyentu.com/wp-content/uploads/2025/09/cropped-Thue-xe-may-min-1-1.png" type="image/png">
 
-<!-- Bootstrap & Icons -->
+<!-- Bootstrap & Icons & Swiper -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 
 <style>
 :root {
-  --primary: #FF9500; /* Cam iPhone 17 */
-  --secondary: #000; /* Đen */
-  --bg: #fff; /* Trắng */
-  --accent: #FFCC00; /* Vàng sang */
+  --primary:#FF9500;  /* Cam iPhone 17 */
+  --secondary:#000;   /* Đen */
+  --bg:#fff;          /* Trắng */
+  --accent:#FFCC00;   /* Vàng sang */
 }
 body {
   font-family: Arial,sans-serif;
-  margin: 0;
-  background: var(--bg);
+  margin:0;
+  background: linear-gradient(135deg,#ff7f50,#1c1c1c,#ffffff,#00aaff);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
   color: var(--secondary);
   scroll-behavior: smooth;
 }
+@keyframes gradientBG {0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}
 
-/* Topbar */
-.top-bar{
-  background:#111;
-  color:var(--accent);
+/* TOPBAR */
+.top-bar {
+  background: rgba(0,0,0,0.85);
+  color: var(--accent);
   font-size:.9rem;
   padding:.4rem 1rem;
   display:flex;
   justify-content:space-between;
   align-items:center;
 }
-.top-bar .lang-switch button{
+.top-bar button {
   margin-left:5px;
+  font-weight:bold;
+  border-radius:20px;
+  transition: all 0.3s;
 }
+.top-bar button:hover {transform:scale(1.1);}
 
-/* Navbar */
-.navbar{
-  background: var(--secondary);
-}
-.navbar .navbar-brand img{
-  height:40px;
-}
+/* NAVBAR */
+.navbar {background: var(--secondary);}
+.navbar .navbar-brand img{height:40px;}
 .navbar a{color: var(--primary);}
 .navbar a:hover{color: var(--accent);}
 
-/* Hero */
+/* HERO */
 #hero{
-  background: linear-gradient(135deg, #FF9500, #000, #fff);
   text-align:center;
   padding:80px 20px;
   color: var(--bg);
@@ -73,26 +75,39 @@ body {
 #hero .btn{
   border-radius:50px;
   font-weight:bold;
+  padding:0.7rem 1.5rem;
+  transition:transform 0.2s;
 }
-#hero .btn:hover{
-  transform:scale(1.05);
-}
+#hero .btn:hover{transform:scale(1.05);}
+
+/* ABOUT */
+#about .col-md-4 i{font-size:2.2rem;}
+.fade-in{opacity:0; transform:translateY(20px); transition: all 0.8s ease;}
+.fade-in.appear{opacity:1; transform:translateY(0);}
 </style>
 </head>
 <body>
 
-<!-- Topbar -->
+<!-- TOPBAR -->
 <div class="top-bar">
   <div>
-    <i class="bi bi-clock"></i> 9:00 – 21:00
+    <i class="bi bi-clock"></i> 
+    <span class="lang-vi">Giờ làm việc: 9:00 – 21:00</span>
+    <span class="lang-en d-none">Open: 9:00 AM – 9:00 PM</span>
   </div>
-  <div class="lang-switch">
-    <button class="btn btn-outline-light btn-sm" onclick="switchLang('vi')">🇻🇳 Tiếng Việt</button>
-    <button class="btn btn-outline-light btn-sm" onclick="switchLang('en')">🇺🇸 English</button>
+  <div class="d-flex align-items-center">
+    <i class="bi bi-telephone me-1"></i>
+    <span class="lang-vi">0942467674 (Zalo / WhatsApp)</span>
+    <span class="lang-en d-none">0942467674 (Zalo / WhatsApp)</span>
+    <!-- Language Switch -->
+    <div class="ms-3">
+      <button class="btn btn-outline-light btn-sm" onclick="switchLang('vi')">🇻🇳 VI</button>
+      <button class="btn btn-outline-light btn-sm" onclick="switchLang('en')">🇺🇸 EN</button>
+    </div>
   </div>
 </div>
 
-<!-- Navbar -->
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
   <div class="container">
     <a class="navbar-brand" href="#">
@@ -112,7 +127,7 @@ body {
   </div>
 </nav>
 
-<!-- Hero -->
+<!-- HERO SECTION -->
 <section id="hero">
   <h1 class="lang-vi">Thuê Xe Máy Nguyễn Tú – Hà Nội</h1>
   <h1 class="lang-en d-none">Nguyen Tu Motorbike Rental – Hanoi</h1>
@@ -121,8 +136,9 @@ body {
   <a href="#pricing" class="btn btn-light btn-lg lang-vi">Thuê Ngay</a>
   <a href="#pricing" class="btn btn-light btn-lg lang-en d-none">Rent Now</a>
 </section>
-<!-- About Section -->
-<section id="about" class="container fade-in py-5">
+
+<!-- ABOUT SECTION -->
+<section id="about" class="container py-5 fade-in">
   <h2 class="text-center mb-4"><span class="lang-vi">Giới Thiệu Dịch Vụ</span><span class="lang-en d-none">About Our Service</span></h2>
   <div class="row text-center">
     <div class="col-md-4 mb-3">
@@ -142,8 +158,7 @@ body {
     </div>
   </div>
 </section>
-
-<!-- Pricing Section -->
+  <!-- PRICING SECTION -->
 <section id="pricing" class="container my-5">
   <div class="text-center mb-4">
     <img src="https://thuexemaynguyentu.com/wp-content/uploads/2025/10/Chi-phi-thue-xe-may-Ha-Noi.jpeg" class="img-fluid rounded" alt="Bảng giá thuê xe">
@@ -204,7 +219,8 @@ body {
         </div>
       </div>
     </div>
-        <!-- 1 Tuần -->
+
+    <!-- 1 Tuần -->
     <div class="accordion-item">
       <h2 class="accordion-header" id="price4">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
@@ -237,10 +253,11 @@ body {
         </div>
       </div>
     </div>
+
   </div>
 </section>
 
-<!-- FAQ Section -->
+<!-- FAQ SECTION -->
 <section id="faq" class="container py-5 fade-in">
   <h2 class="text-center mb-4"><span class="lang-vi">Câu Hỏi Thường Gặp</span><span class="lang-en d-none">Frequently Asked Questions</span></h2>
   <div class="accordion" id="faqAccordion">
@@ -258,6 +275,7 @@ body {
         </div>
       </div>
     </div>
+
     <div class="accordion-item">
       <h2 class="accordion-header" id="faq2">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq2">
@@ -272,6 +290,7 @@ body {
         </div>
       </div>
     </div>
+
     <div class="accordion-item">
       <h2 class="accordion-header" id="faq3">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq3">
@@ -289,16 +308,27 @@ body {
   </div>
 </section>
 
-<!-- Quick Call Floating Button -->
-<div class="quick-call-wrapper">
-  <button class="quick-call-btn rounded-pill bg-warning text-dark fw-bold" id="quickCallBtn">Zalo / WhatsApp</button>
-  <div class="extra-btns d-none mt-2" id="extraBtns">
-    <a href="https://maps.app.goo.gl/h8v8NYTmxA88CDMM7?g_st=ipc" target="_blank" class="extra-btn btn btn-light rounded-pill mb-2">Bản Đồ</a>
-    <a href="https://www.facebook.com/chothuexemaynguyentu/" target="_blank" class="extra-btn btn btn-primary rounded-pill">Fanpage</a>
+<!-- QUICK CALL FLOATING BUTTON -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index:9999;">
+  <button class="btn btn-warning rounded-pill fw-bold" id="quickCallBtn">Zalo / WhatsApp</button>
+  <div class="d-none mt-2" id="extraBtns">
+    <a href="https://maps.app.goo.gl/h8v8NYTmxA88CDMM7?g_st=ipc" target="_blank" class="btn btn-light rounded-pill mb-2 w-100">Bản Đồ</a>
+    <a href="https://www.facebook.com/chothuexemaynguyentu/" target="_blank" class="btn btn-primary rounded-pill w-100">Fanpage</a>
   </div>
 </div>
 
-<!-- Reviews Section -->
+<style>
+#quickCallBtn {padding:0.7rem 1.5rem; font-size:1rem;}
+#extraBtns .btn {transition:all 0.3s;}
+#extraBtns .btn:hover {transform:scale(1.05);}
+</style>
+
+<script>
+const quickCallBtn = document.getElementById("quickCallBtn");
+const extraBtns = document.getElementById("extraBtns");
+quickCallBtn.addEventListener("click", ()=>{extraBtns.classList.toggle("d-none");});
+</script>
+  <!-- REVIEWS SECTION -->
 <section id="reviews" class="container py-5 fade-in">
   <h2 class="text-center mb-4"><span class="lang-vi">Đánh Giá Khách Hàng</span><span class="lang-en d-none">Customer Reviews</span></h2>
   <div class="swiper mySwiper">
@@ -321,31 +351,7 @@ body {
   </div>
 </section>
 
-<script>
-const quickCallBtn=document.getElementById("quickCallBtn");
-const extraBtns=document.getElementById("extraBtns");
-quickCallBtn.addEventListener("click",()=>{extraBtns.classList.toggle("d-none");});
-</script>
-<!-- Top Bar với Language Switch -->
-<div class="top-bar d-flex justify-content-between align-items-center px-3 py-2">
-  <div class="d-flex align-items-center">
-    <i class="bi bi-clock me-1"></i>
-    <span class="lang-vi">Giờ làm việc: 9:00 – 21:00</span>
-    <span class="lang-en d-none">Open: 9:00 AM – 9:00 PM</span>
-  </div>
-  <div class="d-flex align-items-center">
-    <i class="bi bi-telephone me-1"></i>
-    <span class="lang-vi">0942467674 (Zalo / WhatsApp)</span>
-    <span class="lang-en d-none">0942467674 (Zalo / WhatsApp)</span>
-    <!-- Language Switch -->
-    <div class="ms-3">
-      <button class="btn btn-outline-light btn-sm me-1" onclick="switchLang('vi')">🇻🇳 VI</button>
-      <button class="btn btn-outline-light btn-sm" onclick="switchLang('en')">🇺🇸 EN</button>
-    </div>
-  </div>
-</div>
-
-<!-- Footer -->
+<!-- FOOTER -->
 <footer class="footer py-4 text-light" style="background:#111;">
   <div class="container text-center text-md-start">
     <div class="row">
@@ -354,24 +360,24 @@ quickCallBtn.addEventListener("click",()=>{extraBtns.classList.toggle("d-none");
         <p class="mb-1"><i class="bi bi-envelope-fill me-1"></i> <a href="mailto:nguyentuantu8x@gmail.com" class="text-warning">nguyentuantu8x@gmail.com</a></p>
         <p class="mb-1"><i class="bi bi-telephone-fill me-1"></i> 0942467674</p>
         <p class="mb-1"><i class="bi bi-geo-alt-fill me-1"></i> 112 Nguyễn Văn Cừ, Bồ Đề, Long Biên, Hà Nội</p>
-        <p class="mb-0"><i class="bi bi-clock-fill me-1"></i> 9:00 – 21:00</p>
+        <p class="mb-0"><i class="bi bi-clock-fill me-1"></i> <span class="lang-vi">9:00 – 21:00</span><span class="lang-en d-none">9:00 AM – 9:00 PM</span></p>
       </div>
       <div class="col-md-4 mb-3">
         <h5 class="lang-vi">Menu Nhanh</h5>
         <h5 class="lang-en d-none">Quick Menu</h5>
         <ul class="list-unstyled">
-          <li><a href="#hero" class="text-warning">Trang Chủ / Home</a></li>
-          <li><a href="#about" class="text-warning">Giới Thiệu / About</a></li>
-          <li><a href="#pricing" class="text-warning">Bảng Giá / Pricing</a></li>
-          <li><a href="#faq" class="text-warning">FAQ</a></li>
+          <li><a href="#hero" class="text-warning"><span class="lang-vi">Trang Chủ</span><span class="lang-en d-none">Home</span></a></li>
+          <li><a href="#about" class="text-warning"><span class="lang-vi">Giới Thiệu</span><span class="lang-en d-none">About</span></a></li>
+          <li><a href="#pricing" class="text-warning"><span class="lang-vi">Bảng Giá</span><span class="lang-en d-none">Pricing</span></a></li>
+          <li><a href="#faq" class="text-warning"><span class="lang-vi">FAQ</span><span class="lang-en d-none">FAQ</span></a></li>
         </ul>
       </div>
       <div class="col-md-4 mb-3">
         <h5 class="lang-vi">Theo Dõi</h5>
         <h5 class="lang-en d-none">Follow Us</h5>
-        <a href="https://www.facebook.com/chothuexemaynguyentu/" target="_blank" class="me-3 text-warning"><i class="bi bi-facebook" style="font-size:1.5rem;"></i></a>
-        <a href="https://maps.app.goo.gl/h8v8NYTmxA88CDMM7?g_st=ipc" target="_blank" class="me-3 text-warning"><i class="bi bi-geo-alt" style="font-size:1.5rem;"></i></a>
-        <a href="https://www.tripadvisor.com/Attraction_Review-g21333608-d9826317-Reviews-Nguyen_Tu_Motorbike_Rental-Long_Bien_Hanoi.html" target="_blank" class="text-warning"><i class="bi bi-star" style="font-size:1.5rem;"></i></a>
+        <a href="https://www.facebook.com/chothuexemaynguyentu/" target="_blank" class="me-3 text-warning"><i class="bi bi-facebook fs-4"></i></a>
+        <a href="https://maps.app.goo.gl/h8v8NYTmxA88CDMM7?g_st=ipc" target="_blank" class="me-3 text-warning"><i class="bi bi-geo-alt fs-4"></i></a>
+        <a href="https://www.tripadvisor.com/Attraction_Review-g21333608-d9826317-Reviews-Nguyen_Tu_Motorbike_Rental-Long_Bien_Hanoi.html" target="_blank" class="text-warning"><i class="bi bi-star fs-4"></i></a>
       </div>
     </div>
     <hr style="border-color:#555;">
@@ -381,38 +387,26 @@ quickCallBtn.addEventListener("click",()=>{extraBtns.classList.toggle("d-none");
   </div>
 </footer>
 
-<!-- Gradient Background CSS -->
-<style>
-body {
-  background: linear-gradient(135deg, #ff7f50, #1c1c1c, #ffffff, #00aaff);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
-  font-family: Arial, sans-serif;
-  scroll-behavior: smooth;
-}
-
-@keyframes gradientBG {
-  0% {background-position:0% 50%;}
-  50% {background-position:100% 50%;}
-  100% {background-position:0% 50%;}
-}
-
-/* Topbar & Footer */
-.top-bar {background: rgba(0,0,0,0.85); color:#fff;}
-.top-bar button {font-weight:bold;}
-.footer a:hover {text-decoration:underline;}
-
-/* Language toggle button style */
-button.lang-btn {
-  border-radius: 20px;
-  transition: all 0.3s;
-}
-button.lang-btn:hover {transform: scale(1.1);}
-</style>
+<!-- BOOTSTRAP & SWIPER JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
 <script>
+// MULTI-LANGUAGE SWITCH
 function switchLang(lang){
   document.querySelectorAll('.lang-vi, .lang-en').forEach(el=>el.classList.add('d-none'));
   document.querySelectorAll('.lang-'+lang).forEach(el=>el.classList.remove('d-none'));
 }
+
+// SWIPER INITIALIZATION
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  navigation: {nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev"},
+  breakpoints: {
+    768: {slidesPerView: 2},
+    992: {slidesPerView: 3}
+  }
+});
 </script>
