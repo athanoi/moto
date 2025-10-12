@@ -413,15 +413,15 @@ const appearOnScroll = new IntersectionObserver((entries, observer)=>{
 }, appearOptions);
 faders.forEach(fader=>appearOnScroll.observe(fader));
 
-<!-- QUICK CALL TOGGLE -->
 <script>
+// QUICK CALL TOGGLE
 const quickCallBtn = document.getElementById("quickCallBtn");
 const extraBtns = document.getElementById("extraBtns");
 
 quickCallBtn.addEventListener("click", () => {
-  const isVisible = extraBtns.classList.contains("d-none");
-  extraBtns.classList.toggle("d-none");
-  quickCallBtn.setAttribute('aria-expanded', isVisible ? 'true' : 'false');
+  const isHidden = extraBtns.classList.contains("d-none"); // true nếu đang ẩn
+  extraBtns.classList.toggle("d-none"); // đổi trạng thái hiển thị
+  quickCallBtn.setAttribute('aria-expanded', isHidden ? 'true' : 'false'); // đúng với trạng thái sau toggle
 });
 </script>
 
